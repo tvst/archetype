@@ -1,0 +1,10 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 17px;
+}
+
+article {
+  width: 40rem;
+  margin: 4em auto;
+}
