@@ -5,8 +5,14 @@ h3,
 h4,
 h5,
 h6,
-p {
-  line-height: 1.6;
+p,
+li,
+dd,
+dt,
+blockquote,
+samp {
+  line-height: 1.6em;
+  line-height: calc(1.6em * var(--archetype-correction, 1));
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,6 +26,8 @@ h4,
 h5,
 h6 {
   margin: 1em 0 0.2em 0;
+  margin-top: calc(1em * var(--archetype-correction, 1));
+  margin-bottom: calc(0.2em * var(--archetype-correction, 1));
 }
 
 h1 + p,
@@ -49,38 +57,51 @@ h6 + dl {
   margin-top: 0;
 }
 
+hr + h1,
+hr + h2,
+hr + h3,
+hr + h4,
+hr + h5,
+hr + h6,
+hr + p,
+hr + ul,
+hr + ol,
+hr + dl {
+  margin-top: 0;
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 0.8em;
+  margin-bottom: calc(0.8em * var(--archetype-correction, 1));
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   font-weight: 400;
-  margin: 1em 0 0.4em 0;
+  margin-bottom: 0.4em;
+  margin-bottom: calc(0.4em * var(--archetype-correction, 1));
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 h5 {
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-size: 1.0rem;
+  font-weight: 600;
 }
 
 h6 {
   font-size: 0.8rem;
-  font-weight: 300;
-  text-transform: uppercase;
+  font-weight: 600;
 }
 
 p,
@@ -89,29 +110,42 @@ ol,
 dl {
   font-size: 1rem;
   margin: 1em 0;
+  margin-top: calc(1em * var(--archetype-correction, 1));
+  margin-bottom: calc(1em * var(--archetype-correction, 1));
   padding: 0;
   font-weight: 400;
 }
 
 li {
-  margin: 0.6em 0 0.6em 1em;
-  padding: 0 0 0 0.2em;
+  margin: 0.6em 0 0.6em 1.2em;
+  margin-top: calc(0.6em * var(--archetype-correction, 1));
+  margin-bottom: calc(0.6em * var(--archetype-correction, 1));
+  margin-left: calc(1.2em * var(--archetype-correction, 1));
+  padding: 0 0 0 0.6em;
+  padding-left: calc(0.6em * var(--archetype-correction, 1));
 }
 
 dt {
   font-weight: 600;
   margin: 1em 0 0.4em 0;
+  margin-top: calc(1em * var(--archetype-correction, 1));
+  margin-bottom: calc(0.4em * var(--archetype-correction, 1));
   padding: 0;
 }
 
 dd {
   margin: 0 0 0.6em 1.2em;
+  margin-bottom: calc(0.6em * var(--archetype-correction, 1));
+  margin-left: calc(1.2em * var(--archetype-correction, 1));
 }
 
 samp,
 blockquote {
   margin: 1.8em 0 1.8em -1px;
+  margin-top: calc(1.8em * var(--archetype-correction, 1));
+  margin-bottom: calc(1.8em * var(--archetype-correction, 1));
   padding: 0 0 0 1.2em;
+  padding-left: calc(1.2em * var(--archetype-correction, 1));
   font-size: 1rem;
   border-left: 1px solid #ccc;
 }
@@ -126,25 +160,14 @@ figcaption,
 figcaption p {
   font-size: 0.8rem;
   line-height: 1.8em;
+  line-height: calc(1.8em * var(--archetype-correction, 1));
 }
 
 hr {
   border: none;
   border-bottom: 1px solid #ccc;
   margin: 2em 0;
+  margin-top: calc(2em * var(--archetype-correction, 1));
+  margin-bottom: calc(2em * var(--archetype-correction, 1));
   padding: 0;
 }
-
-hr + h1,
-hr + h2,
-hr + h3,
-hr + h4,
-hr + h5,
-hr + h6,
-hr + p,
-hr + ul,
-hr + ol,
-hr + dl {
-  margin-top: 0;
-}
-
