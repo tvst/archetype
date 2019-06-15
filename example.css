@@ -1,0 +1,35 @@
+html {
+  /**
+   * Try different font-size / correction values:
+   */
+  font-size: 16px;
+}
+
+:root {
+  /**
+   * Try different font-size / correction values:
+   */
+  --archetype-correction: 1.0;
+}
+
+body {
+  /**
+   * Try different fonts by commenting them in/out:
+   *
+
+  font-family: "Georgia", serif;
+  font-family: "IBM Plex Serif", serif;
+  font-family: "Martel", serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Times New Roman", serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  */
+  font-family: "IBM Plex Sans", sans-serif;
+
+  font-size: 1em;
+}
+
+article {
+  width: 700px;
+  margin: 60px auto;
+}
